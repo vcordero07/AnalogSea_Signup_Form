@@ -7,24 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AnalogSea Signup</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
 
     <main class="container">
 
-        <header>
+        <header class="logo">
             <img src="images/logo.png" alt="AnalogSea logo">
         </header>
         <div class="content">
-            <form class="AS_SignupForm" action="/signup" method="post">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <h1>Sign up</h1>
+            <form class="AS_SignupForm" action="/signup/" method="post">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="foo@bar.com" required>
 
-            <label for="password">Password</label>
-            <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$s" name="password" id="password">
+                <label for="password">Password</label>
+                <input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$s" name="password" id="password" placeholder="1234passwOrd" required>
+
+                <button type="button" name="button" class="btn-signup">Sign up</button>
+                <a class="link-forgotpwd" href="/forgot-password/new">Forgot Password?</a>
 
             </form>
+        </div>
+
+        <div class="login">
+            <p>Already have an account? <a href="/login">Log in</a></p>
         </div>
     </main>
 
