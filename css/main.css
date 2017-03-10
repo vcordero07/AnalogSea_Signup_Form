@@ -34,11 +34,13 @@ h1 {
   text-align: center;
   font-weight: lighter;
   padding: 25px;
+  margin: 0;
 }
 
 label{
   display: block;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 
@@ -49,7 +51,7 @@ input[type="email"] {
     padding: 15px;
     height: 21px;
     border-radius: 3px;
-    margin-bottom: 15px;
+
     font-size: 15px;
 }
 
@@ -60,7 +62,7 @@ input[type="password"] {
     padding: 15px;
     height: 21px;
     border-radius: 3px;
-    margin-bottom: 15px;
+
     font-size: 15px;
 }
 
@@ -73,7 +75,8 @@ input[type="password"] {
     display: block;
     border: 2px solid #00cc66;
     border-radius: 3px;
-    margin-bottom: 8px;
+    position: relative;
+    top: 15px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -87,6 +90,8 @@ input[type="password"] {
     display: block;
     text-align: center;
     font-size: 15px;
+    position: relative;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
 
@@ -95,6 +100,8 @@ input[type="password"] {
     margin: auto;
     text-align: center;
     font-weight: bold;
+    position: relative;
+    top: 10px;
 }
 
 .login, .login a {
